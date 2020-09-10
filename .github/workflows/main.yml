@@ -52,4 +52,4 @@ jobs:
           # Specifies the name of the resource group deployment to create.
           deploymentName: # optional
           # Supply deployment parameter values.
-          parameters: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-function-app-create-dedicated/azuredeploy.parameters.json 
+          parameters: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-function-app-create-dedicated/azuredeploy.parameters.json appName=bishal-func-dedicated-1
