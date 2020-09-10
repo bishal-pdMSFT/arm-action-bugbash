@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "principalId": {
-            "value": "GEN-AZUREAD-OBJECTID"
+            "value": "GEN-AZUREAD--OBJECTID"
         }
     }
 }
