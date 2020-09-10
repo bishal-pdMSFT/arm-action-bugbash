@@ -36,7 +36,7 @@ jobs:
         uses: Azure/arm-deploy@v1
         with:
           # Provide the scope of the deployment. alid values are: 'resourcegroup', 'managementgroup', 'subscription'
-          scope: 
+          scope: subscription
           # Provide the Id of the subscription which should be used.
           subscriptionId: c00d16c7-6c1f-4c03-9be1-6934a4c49682
           # Specify the Id for the Management Group, only required for Management Group Deployments.
@@ -44,12 +44,12 @@ jobs:
           # Provide the target region, only required for management Group or Subscription deployments.
           region: japan east
           # Provide the name of a resource group.
-          resourceGroupName: bisha-action-bugbash
+          resourceGroupName:
           # Specify the path or URL to the Azure Resource Manager template.
-          template: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-function-app-create-dedicated/azuredeploy.json
+          template: ./azuredeploy.json
           # Incremental (only add resources to resource group) or Complete (remove extra resources from resource group).
           deploymentMode: # optional, default is Incremental
           # Specifies the name of the resource group deployment to create.
           deploymentName: # optional
           # Supply deployment parameter values.
-          parameters: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-function-app-create-dedicated/azuredeploy.parameters.json appName=bishal-func-dedicated-1
+          parameters: ./azuredeployparameters.json principalId=2177251b-9226-435f-b1ec-7cfb5641188d
